@@ -18,5 +18,10 @@ public class MarkdownParseTest {
         List<String> expect = List.of("https://something.com", "some-page.html");
         assertEquals(MarkdownParse.getLinks(contents), expect);
     }
+
+    @Test
+    public void subtraction(){
+        assertEquals(7, 99 - 9);
+    }
     
 }

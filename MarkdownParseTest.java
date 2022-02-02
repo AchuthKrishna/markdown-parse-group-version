@@ -19,6 +19,12 @@ public class MarkdownParseTest {
         assertEquals(MarkdownParse.getLinks(contents), expect);
     }
 
+    public void testFile6() throws IOException{
+        String contents= Files.readString(Path.of("./test-file5.md"));
+        List<String> expect = List.of();
+        assertEquals(MarkdownParse.getLinks(contents), expect);
+    }
+
     @Test
     public void subtraction(){
         assertEquals(7, 9 - 2);

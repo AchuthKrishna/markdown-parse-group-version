@@ -18,7 +18,7 @@ public class MarkdownParse {
             // check if there even is an openParen and closeParen before
             // creating a substring. Also check closeParen is before openParen
             if (openParen != -1 && closeParen > openParen && closeParen != -1
-                && markdown.substring(openParen - 1).equals("]")) {
+                && markdown.substring(openParen - 1, openParen).equals("]")) {
                 toReturn.add(markdown.substring(openParen + 1, closeParen));
                 currentIndex = closeParen + 1;
             } else {

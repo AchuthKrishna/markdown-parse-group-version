@@ -39,5 +39,6 @@ public class MarkdownParse {
         ArrayList<String> links = getLinks(contents);
         System.out.println(links);
         System.out.println("End of links");
+        System.out.println("Second change");
     }
 }
